@@ -23,6 +23,7 @@
   "homepage": "https://github.com/zobor/scp-deploy",
   "dependencies": {
     "colors": "^1.1.2",
+    "progress": "^2.0.0",
     "rd": "^1.0.0",
     "scp2": "^0.5.0"
   }
