@@ -1,6 +1,6 @@
 {
   "name": "scp-deploy",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "The upload tool provided to the developer",
   "repository": {
     "type": "git",
