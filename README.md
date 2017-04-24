@@ -13,7 +13,14 @@ scpDeploy({
     port: 22, // ssh port,
     username: 'ssh_user',
     passowrd: 'ssh_password',
-    src: '/path/to/your/local/folder/',
+    src: [
+      // foder1 not include subdirectory
+      '/path/to/your/local/folder1/',
+      // foder2 include subdirectory
+      '/path/to/your/local/folder2/**',
+      // filter *.js
+      '/path/to/your/local/folder2/**.js'
+    ],
     path: '/path/to/your/remote/foler/'
 }).then((info)=>{
     console.log('done!')

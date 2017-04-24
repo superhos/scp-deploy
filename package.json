@@ -1,10 +1,10 @@
 {
   "name": "scp-deploy",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "The upload tool provided to the developer",
   "repository": {
     "type": "git",
-    "url": "http://zobor.github.io"
+    "url": "https://github.com/zobor/scp-deploy"
   },
   "keywords": [
     "scp, deploy, upload, scp-deploy, ssh-upload"
@@ -20,7 +20,7 @@
   "engines": {
     "node": ">= 5.1.1"
   },
-  "homepage": "https://github.com/zobor/scp-deploy",
+  "homepage": "https://zobor.github.io",
   "dependencies": {
     "colors": "^1.1.2",
     "progress": "^2.0.0",
