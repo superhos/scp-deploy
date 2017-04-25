@@ -1,5 +1,8 @@
 # scp-deploy
 
+*The upload tool provided to the developer by ssh*
+----
+
 ## Install
 ```
 $ npm install scp-deploy --save-dev
@@ -7,8 +10,8 @@ $ npm install scp-deploy --save-dev
 
 ## API
 ```js
-let scpDeploy = require('scp-deploy')
-scpDeploy({
+let deploy = require('scp-deploy')
+deploy({
     host: 'your remote host',
     port: 22, // ssh port,
     username: 'ssh_user',
@@ -28,13 +31,30 @@ scpDeploy({
 }).catch((err)=>{
     console.log(err)
 })
+```
 
-# info fomat
+## Options
+* `host` You want to upload the file to which server
+* `port` the server ssh port
+* `username` the server ssh login user
+* `password` the server ssh login user's password
+* `path` the path you want to save the files
+* `src` local path can be an array or a string
+ > `/Users/zoborzhang/public/` the public folder's files not include subdirectory
+
+ > `/Users/zoborzhang/public/**` the public fodler's files include subdirectory
+
+ > `/Users/zoborzhang/public/*.js` not include subdirectory, all the javascript files
+
+ > `/Users/zoborzhang/public/**.js` include subdirectory, all the javascript files
+
+## callback info format
+```js
 {
-  totalFilesize: 1712372,
-  filesCount: 45,
-  startTime: 2017-04-22T14:31:35.969Z,
-  connetedTime: 2017-04-22T14:31:36.073Z,
-  uploadedTime: 2017-04-22T14:31:39.206Z
+  totalFilesize: {Number},
+  filesCount: {Number},
+  startTime: {Object Date},
+  connetedTime: {Object Date},
+  uploadedTime: {Object Date}
 }
 ```
