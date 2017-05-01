@@ -1,6 +1,7 @@
 # scp-deploy
 
-*The upload tool provided to the developer by ssh*
+The upload tool provided to the developer by ssh
+
 ----
 
 ## Install
@@ -19,10 +20,12 @@ deploy({
     src: [
       // foder1 not include subdirectory
       '/path/to/your/local/folder1/',
+
       // foder2 include subdirectory
       '/path/to/your/local/folder2/**',
-      // filter *.js
-      '/path/to/your/local/folder2/**.js'
+
+      // filter *.css
+      '/path/to/your/local/folder2/**.css'
     ],
     path: '/path/to/your/remote/foler/'
 }).then((info)=>{
@@ -46,7 +49,7 @@ deploy({
 
  > `/Users/zoborzhang/public/*.js` not include subdirectory, all the javascript files
 
- > `/Users/zoborzhang/public/**.js` include subdirectory, all the javascript files
+ > `/Users/zoborzhang/public/**.css` include subdirectory, all the css files
 
 ## callback info format
 ```js
