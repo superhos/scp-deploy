@@ -29,7 +29,6 @@ deploy({
     ],
     path: '/path/to/your/remote/foler/'
 }).then((info)=>{
-    console.log('done!')
     console.log(info)
 }).catch((err)=>{
     console.log(err)
@@ -50,6 +49,8 @@ deploy({
  > `/Users/zoborzhang/public/*.js` not include subdirectory, all the javascript files
 
  > `/Users/zoborzhang/public/**.css` include subdirectory, all the css files
+ 
+ > `/Users/zoborzhang/public/main.js` support single filename
 
 ## callback info format
 ```js
