@@ -16,7 +16,7 @@ deploy({
     host: 'your remote host',
     port: 22, // ssh port,
     username: 'ssh_user',
-    passowrd: 'ssh_password',
+    password: 'ssh_password',
     src: [
       // foder1 not include subdirectory
       '/path/to/your/local/folder1/',
@@ -49,7 +49,7 @@ deploy({
  > `/Users/zoborzhang/public/*.js` not include subdirectory, all the javascript files
 
  > `/Users/zoborzhang/public/**.css` include subdirectory, all the css files
- 
+
  > `/Users/zoborzhang/public/main.js` support single filename
 
 ## callback info format
