@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="280" height="120">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="20">
   <g shape-rendering="crispEdges">
     <path fill="#555" d="M0 0h35v20H0z"/>
     <path fill="#007ec6" d="M35 0h45v20H35z"/>
