@@ -1,6 +1,6 @@
 # scp-deploy
 
-The upload tool provided to the developer by ssh
+An upload tool provided to developers using ssh
 
 ----
 
